@@ -16,3 +16,26 @@ function catWalk() {
 function startCatWalk() {
   catTimer = window.setInterval(catWalk, delayMs);
 }
+
+// 1
+function onStartClick() {
+  startCatWalk();
+}
+var startButton = document.getElementById('start-button');
+startButton.addEventListener('click', onStartClick);
+
+// 2
+function onStopClick() {
+ window.clearInterval(catTimer);
+}
+var stopButton = document.getElementById('stop-button');
+stopButton.addEventListener('click', onStopClick);
+
+// 3
+function onSpeedClick() {
+  movePixels += 5;
+  var speed = movePixels * (1000/50);
+  document.getElementById('info').innerHTML = 'Current speed: ' + speed + 'px/second';
+}
+var speedButton = document.getElementById('speed-button');
+speedButton.addEventListener('click', onSpeedClick);
