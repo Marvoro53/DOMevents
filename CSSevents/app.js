@@ -35,7 +35,7 @@ stopButton.addEventListener('click', onStopClick);
 function onSpeedClick() {
   movePixels += 5;
   var speed = movePixels * (500/50);
-  document.getElementById('info').innerHTML = 'Current speed: ' + speed + 'px/second';
+  document.getElementById('info').innerHTML = 'Cat current speed: ' + speed + 'px/second';
 }
 var speedButton = document.getElementById('speed-button');
 speedButton.addEventListener('click', onSpeedClick);

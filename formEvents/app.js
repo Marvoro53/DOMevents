@@ -4,3 +4,14 @@
 // element loses focus, i.e when the cursor moves away from form field
 //add an alert box that responses to the onclick alerting the
 // user before they fill out the form
+var form = document.getElementById('myForm');
+
+form.addEventListener('focus', (event) => {
+  event.target.style.background = 'green';
+}, true);
+
+form.addEventListener('blur', (event) => {
+  event.target.style.background = '';
+}, true);
+
+
