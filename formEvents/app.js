@@ -14,4 +14,7 @@ form.addEventListener('blur', (event) => {
   event.target.style.background = '';
 }, true);
 
+function clickAlert() {
+  alert("Do you want to submit?");
+}
 
