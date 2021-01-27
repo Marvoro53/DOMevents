@@ -4,3 +4,7 @@
 
 // Hint: The getModifierState() method
 
+function myCaps(event){
+    var x= event.getModifierState("CapsLock");
+    document.getElementById('caps').innerHTML= 'The caps are on! ' + x;
+}
