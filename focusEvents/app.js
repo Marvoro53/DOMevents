@@ -6,6 +6,6 @@ addEventListener('focus', (event) => {
     event.target.style.background = 'skyBlue';
   }, true);
 
-  addEventListener('blur', (event) => {
+addEventListener('blur', (event) => {
     event.target.style.background = '';
   }, true);
